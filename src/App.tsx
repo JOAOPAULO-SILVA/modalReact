@@ -1,7 +1,7 @@
 import { useState } from "react";
 import style from "./App.module.css";
 import Modal from "./components/Modal.tsx";
-import Message from "./components/message.tsx";
+import Toast from "./components/Toast.tsx";
 function App() {
   const [open, setOpen] = useState<boolean>(false);
   const [showToaster, setShowToaster] = useState<boolean>(false);
@@ -21,11 +21,11 @@ function App() {
           Open modal
         </button>
         <Modal open={open} closeModal={closeModal} />
-        <Message
+        <Toast
           mensagem="ola"
           closeToaster={closeToaster}
           show={showToaster}
-        ></Message>
+        />
       </div>
     </>
   );

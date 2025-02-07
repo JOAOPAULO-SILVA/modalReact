@@ -1,20 +1,21 @@
 .toasterContainer {
   padding-left: 10px;
   align-items: center;
-  background-color: white;
+  background-color: rgba(16, 231, 56, 0.12);
   color: black;
   display: flex;
   justify-content: space-between;
   align-self: baseline;
   height: 3rem;
   width: 30%;
-  border-radius: 30px;
+  border-color: #0ed963;
+  border-radius: 5px;
 }
 .toasterButton {
   border-radius: inherit;
-  border: blue;
+  border-color: blue;
   outline: none;
-  background-color: inherit;
+  background-color: transparent;
   color: inherit;
 }
 .toasterButton:focus {
