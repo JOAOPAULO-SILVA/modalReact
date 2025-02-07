@@ -25,6 +25,7 @@ function App() {
           mensagem="ola"
           closeToaster={closeToaster}
           show={showToaster}
+          toastMode='success'
         />
       </div>
     </>

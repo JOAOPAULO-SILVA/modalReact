@@ -1,18 +1,15 @@
 .toasterContainer {
   padding-left: 10px;
   align-items: center;
-  background-color: rgba(16, 231, 56, 0.12);
   color: black;
   display: flex;
   justify-content: space-between;
   align-self: baseline;
   height: 3rem;
   width: 30%;
-  border-color: #0ed963;
   border-radius: 5px;
 }
 .toasterButton {
-  border-radius: inherit;
   border-color: blue;
   outline: none;
   background-color: transparent;
@@ -21,4 +18,17 @@
 .toasterButton:focus {
   background-color: #f0f0f0;
   border: 1px solid #ccc;
+}
+
+.toasterContainer .errorToast{
+  background-color: rgba(231, 16, 16, 0.09);
+  border: solid 3px #E2391B;
+}
+.toasterContainer .alertToast{
+  background-color: rgba(126, 116, 116, 0.04);
+  border: solid 3px #262323;
+}
+.toasterContainer .successToast{
+  background-color: rgba(16, 231, 56, 0.12);
+  border: solid 3px #0ed963;
 }
