@@ -1,34 +1,45 @@
 .toasterContainer {
   padding-left: 10px;
+  margin-right: 10px;
   align-items: center;
   color: black;
   display: flex;
-  justify-content: space-between;
-  align-self: baseline;
+  gap: 3px;
+  position: absolute;
+  right: 0;
+  top: 20px;
   height: 3rem;
-  width: 30%;
+  padding-left: 20px;
   border-radius: 5px;
+  animation: toastSlide 1s ease-out;
 }
-.toasterButton {
-  border-color: blue;
+.errorToast{
+  background-color: rgba(231, 16, 16, 0.09);
+  border: solid 3px #E2391B;
+}
+.alertToast{
+  background-color: rgba(126, 116, 116, 0.04);
+  border: solid 3px #262323;
+}
+.successToast{
+  background-color: rgba(16, 231, 56, 0.12);
+  border: solid 3px #0ed963;
+}
+.toastButton {
   outline: none;
   background-color: transparent;
   color: inherit;
 }
 .toasterButton:focus {
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
+  outline: none;
 }
 
-.toasterContainer .errorToast{
-  background-color: rgba(231, 16, 16, 0.09);
-  border: solid 3px #E2391B;
-}
-.toasterContainer .alertToast{
-  background-color: rgba(126, 116, 116, 0.04);
-  border: solid 3px #262323;
-}
-.toasterContainer .successToast{
-  background-color: rgba(16, 231, 56, 0.12);
-  border: solid 3px #0ed963;
+
+@keyframes toastSlide{
+  0%{
+    transform: translate(-100%);
+  }
+  100%{
+    transform:translateX(0px);
+  }
 }
