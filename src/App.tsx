@@ -25,13 +25,13 @@ function App() {
     setShowToaster(true)
     setMensagem(mensagem)
     setToastMode(modoToast)
-    setTimeout(closeToaster, 2500);
-    timeoutRef.current = setTimeout(closeToaster, 2500);
+    setTimeout(closeToaster, 5000);
+    timeoutRef.current = setTimeout(closeToaster, 5000);
   }
   return (
     <>
       <div className={style.container}>
-        <button className={style.btnActivate} onClick={() => openToast("error","aahh xibiuzão grandão")}>
+        <button className={style.btnActivate} onClick={() => openToast("error","CEGA ELES, VOVÓ")}>
           Open modal
         </button>
         <Modal open={open} closeModal={closeModal} />
