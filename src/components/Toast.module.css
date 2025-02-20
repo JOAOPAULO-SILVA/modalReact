@@ -12,7 +12,7 @@
   padding-left: 15px;
   padding-right: 10px;
   border-radius: 5px;
-  animation: toastSlide 1s ease-out;
+  animation: toastSlide 0.75s ease-in-out;
 }
 .errorToast{
   background-color: rgba(231, 16, 16, 0.09);
@@ -48,7 +48,7 @@
 
 @keyframes toastSlide{
   0%{
-    transform: translate(-100%);
+    transform: translate(+100%);
   }
   100%{
     transform:translateX(0px);
